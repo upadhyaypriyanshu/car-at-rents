@@ -1,0 +1,29 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2024-08-30 11:12:59.908398",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Ride Booking",
+ "enabled": 1,
+ "event": "New",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p> This is the Response of the Booking </p>\n<a href =\"http://192.168.2.86:8000/app\"> Click here To view </a>",
+ "message_type": "HTML",
+ "modified": "2024-08-30 12:10:36.238748",
+ "modified_by": "Administrator",
+ "module": "Car at rents",
+ "name": "New Booking Arrived",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "System Manager"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "{{doc.customer_name}}booked Vehicle"
+}

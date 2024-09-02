@@ -148,23 +148,28 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"cabs_app.tasks.all"
-# 	],
-# 	"daily": [
-# 		"cabs_app.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"cabs_app.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"cabs_app.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"cabs_app.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+	# "all": [
+	# 	"cabs_app.tasks.all"
+	# ],
+	# "daily": [
+	# 	"cabs_app.tasks.daily"
+	# ],
+	# "hourly": [
+	# 	"cabs_app.tasks.hourly"
+	# ],
+	# "weekly": [
+	# 	"cabs_app.tasks.weekly"
+	# ],
+	# "monthly": [
+	# 	"cabs_app.tasks.monthly"
+	# ],
+    "Cron":{
+        "05 11 * * 1":[
+            "cabs_app.www.hello.throw_emoji"
+        ]
+    }
+ }
 
 # Testing
 # -------
